@@ -16,3 +16,5 @@ def start_udp_server():
             data, addr = s.recvfrom(1024)
             print(f"\n[+] Mensaje enviado por el cliente: {data.decode()}")
             print(f"[+] Informacion del cliente que nos ha enviado el mensaje: {addr}")
+
+start_udp_server()
